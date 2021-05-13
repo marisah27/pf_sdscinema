@@ -1,0 +1,929 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+.ticket {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+
+.ticket h4.title {
+	background-image: url(../images/icon_heading.png);
+	padding-left: 50px;
+	height: 57px;
+	line-height: 57px;
+	background-repeat: no-repeat;
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom:40px;
+}
+
+.ticket h4 {
+	background-image: url(../images/icon_heading.png);
+	padding-left: 50px;
+	height: 57px;
+	line-height: 57px;
+	background-repeat: no-repeat;
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom:40px;
+}
+
+
+/*斜めならび*/
+
+ul.ticket_item{
+    list-style: none;
+    display: flex;
+}
+ul.ticket_item li{
+	margin-right:60px;
+	line-height:30px;
+	padding:15px 0 15px 5px;
+}
+
+ul.ticket_item li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight:bold;
+  color: #666;
+  z-index: 1;
+  padding-left:58px;
+}
+
+ul.ticket_item li a span{
+	padding-left: 40px;
+  font-size: 20px;
+
+}
+
+ul.ticket_item li a::before{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    background-color:#fff;
+	border:1px solid #666;
+	transform: skewX(345deg);
+	width: 153px;
+	height:80px;
+}
+
+ul.ticket_item li a:hover::before{
+    background-color:#ff8989; /*ホバーでピンク色にする*/
+	border:none;
+}
+
+ul.ticket_item li a:hover{
+	color:#fff;
+	opacity:1;
+	}
+	
+
+
+
+/*------------------------------------*/
+
+.theater {
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+
+.theater_content1 {
+  padding: 10px 10px 20px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 1px solid #333;
+}
+
+
+.theater_summary {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  padding-top: 25px;
+  padding-left: 2px;
+  margin-top: 8px;
+  float: left;
+  clear: left;
+}
+
+
+.theater_content1_inner {
+  width: 840px;
+  margin-left: 60px;
+}
+
+
+.theater_title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+h3.movie_title {
+  color: #ff9393;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.theater p {
+  line-height: 20px;
+}
+
+.theater .about_btn {
+  text-align: right;
+  position: relative;
+}
+
+.theater .about_btn p {
+  margin: 8px 35px 0 0;
+  font-size: 14px;
+}
+
+.theater .about_btn img {
+  position: absolute;
+  left: -24px;
+  bottom: 10px;
+}
+
+.theater .about_btn a {
+  color: #ff9393;
+}
+
+.theater .about_btn a:hover {
+  opacity: 0.5;
+}
+
+.theater_time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theater_time .theater_time_item {
+  display: flex;
+
+}
+
+
+
+/*.saleタグ*/
+.theater_time .theater_time_item .sale {
+  width: 150px;
+  height: 120px;
+  background-color: #ff8989;
+  text-align: center;
+  font-size: 24px;
+	margin-right:15px;
+}
+
+.theater_time .theater_time_item .sale p .startime {
+  font-size: 34px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.theater_time .theater_time_item .sale p .endtime {
+  font-size: 26px;
+  color: #fff;
+}
+
+.theater_time .theater_time_item .sale p {
+  display: block;
+  width: 150px;
+  height: 120px;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+.theater_time .theater_time_item .reserved {
+  width: 150px;
+  height: 60px;
+  line-height: 2.5;
+  background-color: #ff8989;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+}
+
+.theater_time .theater_time_item .reserved p.mark {
+  width: 50px;
+}
+
+.reserved {
+  position: relative;
+  z-index: 1;
+}
+
+.reserved a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+.reserved:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  zoom: 1;
+}
+
+
+/*.soldoutタグ*/
+.theater_time .theater_time_item .soldout {
+  width: 150px;
+  height: 120px;
+  background-color: #e4e5e3;
+  text-align: center;
+  font-size: 24px;
+	margin-right:15px;
+}
+
+.theater_time .theater_time_item .soldout p .startime {
+  font-size: 34px;
+  line-height: 50px;
+  color: #000;
+}
+
+.theater_time .theater_time_item .soldout p .endtime {
+  font-size: 26px;
+  color: #000;
+}
+
+.theater_time .theater_time_item .soldout p {
+  display: block;
+  width: 150px;
+  height: 120px;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+.theater_time .theater_time_item .sold_reserved {
+  width: 150px;
+  height: 60px;
+  line-height: 2.5;
+  background-color: #e4e5e3;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  display: flex;
+}
+
+.theater_time .theater_time_item .sold_reserved p.mark {
+  width: 50px;
+}
+
+/*.fewタグ*/
+.theater_time .theater_time_item .few {
+  width: 150px;
+  height: 120px;
+  background-color: #ff8989;
+  text-align: center;
+  font-size: 24px;
+	margin-right:15px;
+}
+
+.theater_time .theater_time_item .few p .startime {
+  font-size: 34px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.theater_time .theater_time_item .few p .endtime {
+  font-size: 26px;
+  color: #fff;
+}
+
+.theater_time .theater_time_item .few p {
+  display: block;
+  width: 150px;
+  height: 120px;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+.theater_time .theater_time_item .few_reserved {
+  width: 150px;
+  height: 60px;
+  line-height: 2.5;
+  background-color: #ffafaf;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+}
+
+.theater_time .theater_time_item .few_reserved p.mark {
+  width: 50px;
+}
+
+.few_reserved {
+  position: relative;
+  z-index: 1;
+}
+
+.few_reserved a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+.few_reserved:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  zoom: 1;
+}
+
+
+/*非表示*/
+.display_none{
+visibility:hidden;
+	}
+
+
+/*チケット料金*/
+
+	/*-jQuery 《左から》スクロールするとふわと表示するやつ---*/
+.pricetable{
+	opacity:0;
+  transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+  transition: all 1500ms; /* フェードインにかかる時間を指定 */
+}
+
+.effect-scroll{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+.pricetable h4 {
+	background-image: url(../images/icon_heading.png);
+	padding-left: 50px;
+	height: 57px;
+	line-height: 57px;
+	background-repeat: no-repeat;
+	font-size: 40px;
+	font-weight: bold;
+    margin-bottom: 30px;
+}
+
+table{
+  border-collapse: collapse;
+  width:840px;
+}
+
+
+th{
+  background-color: #ffafaf;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  border-right: 20px solid #fff;
+  padding: 5px;
+  line-height:1.5;
+  height:20px;
+}
+
+
+td{
+  border-bottom: 1px solid #000;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left:20px;
+  font-size: 26px;
+}
+
+
+td.price{
+  font-weight:bold;
+}
+
+
+td.remarks{
+  font-size: 14px;
+}
+
+.caution{
+	font-size:12px;
+	padding-top:30px;
+}
+
+
+@media screen and (max-width:640px) {
+.inner {
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;}
+
+.main_pink_bg{padding-bottom:80px;}
+
+.fix{position:fixed; background-color:#ffebea; }
+
+.nav_btn {
+	display: block;
+	width: 15%;
+	height: auto;
+	position:fixed;
+	left: 0px;
+	top: 0px;
+	background-color:#ffebea; z-index:30;
+}
+header {display: block;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+	
+header h1{
+	position: fixed;
+	left: 55px;
+	top: 0px;
+	width: 85%;
+	height: auto;
+	background-color: #ffebea; z-index:30;
+}
+	
+	
+.header_nav {
+	display: block;
+	position:fixed;
+	top:50px;
+	left:0px;
+	width:100%; margin-right:auto; background-color:#ffebea; z-index:30;
+	
+}
+
+.header_nav li{height:auto; width:100%; margin-left:0px; font-size:120%;}
+
+header .flex{padding-top:60px;}
+
+header .ticket_button {
+	width: 30%; padding-left:0px;
+}
+
+
+/*斜めならび*/
+
+
+ul.ticket_item li{
+	margin-right:10px;
+	line-height:30px;
+	padding:15px 0 15px 5px;
+}
+
+ul.ticket_item li a{
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight:bold;
+	color: #666;
+	z-index: 1;
+	padding-left:33px;
+}
+
+ul.ticket_item li a span{
+padding: 0px 10px 0px 3px;
+    font-size: 77%;
+}
+
+ul.ticket_item li a::before{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    background-color:#fff;
+	border:1px solid #666;
+	transform: skewX(345deg);
+	width: 100%;
+	height:auto;
+}
+
+
+/*シアター*/
+
+.theater_content1_inner{
+padding-bottom: 20px;
+}
+
+.theater_content1_inner{
+max-width: 87%;
+margin-left: 12%;
+padding-bottom: 20px;
+}
+
+.theater_time{
+	flex-direction:column;
+	display:block;
+}
+
+.about_btn{
+	display:none;
+}
+
+.theater_time img{
+margin-bottom: 20px;
+}
+
+.theater_time .theater_time_item .sale {
+	width:100%; height: 80px; padding-top:0px; margin-bottom:80px;
+	}
+
+.theater_time .theater_time_item .few{
+	width:100%; height: 80px; padding-top:0px; margin-bottom:80px;
+	}
+
+.theater_time .theater_time_item .soldout{
+	width:100%; height: 80px; padding-top:0px; margin-bottom:80px;
+	}
+
+.theater_time .theater_time_item .sold_reserved {
+	height:50%;
+	width:100%;
+}
+
+.theater_time .theater_time_item .reserved {
+	height:50%;
+	width:100%;
+}
+
+.theater_time .theater_time_item .few_reserved{
+	height:50%;
+	width:100%;
+}
+
+
+.theater_time .theater_time_item .few_reserved .mark{
+	padding:0px;
+}
+
+.theater_time .theater_time_item .sold_reserved .mark{
+	padding:0px;
+}
+.theater_time .theater_time_item .reserved .mark{
+	padding:0px;
+}
+
+
+.theater_time .theater_time_item .sale p {
+  display: block;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 0px;
+  padding: 0px 12px;
+font-size: 64%;
+}
+
+.theater_time .theater_time_item .few p {
+  display: block;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 0px;
+  padding: 0px 12px;
+font-size: 60%;
+}
+
+.theater_time .theater_time_item .soldout p {
+  display: block;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 0px;
+  padding: 0px 12px;
+font-size: 64%;
+}
+
+.theater_time .theater_time_item .soldout p .startime {
+	font-size:100%}
+
+.theater_time .theater_time_item .soldout p .endtime {
+	font-size:94%}
+
+.theater_time .theater_time_item .few p .startime {
+	font-size:100%}
+
+.theater_time .theater_time_item .few p .endtime {
+	font-size:94%}
+
+.theater_time .theater_time_item .sale p .startime {
+	font-size:100%}
+
+.theater_time .theater_time_item .sale p .endtime {
+	font-size:94%}
+
+
+.ticket h4.title {
+	font-size: 150%;
+    margin-bottom: 0px;
+}
+
+.header_nav{
+	display:none;
+}
+
+
+		
+	
+/*.saleタグ
+.theater_time .theater_time_item .sale {
+  width: 100%;
+  height: 80px;
+  font-size: 100%;
+margin-right:4px;
+}
+
+.theater_time .theater_time_item .sale p .startime {
+  font-size: 80%;
+  line-height: 0px;
+}
+
+.theater_time .theater_time_item .sale p .endtime {
+  font-size: 80%;
+}
+
+.theater_time .theater_time_item .sale p {
+  width: 100%;
+  height: 83%;
+}
+
+.theater_time .theater_time_item .reserved {
+  width: 100%;
+  height: auto;
+  line-height: 2.5;
+  background-color: #ff8989;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+  text-align: center;
+  font-size: 80%;
+}
+
+.theater_time .theater_time_item .reserved p.mark {
+  width: 80%;
+}
+
+.reserved a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+
+.soldoutタグ
+.theater_time .theater_time_item .soldout {
+  width: 100%;
+  height: auto;
+  font-size: 80%;
+	margin-right:15px;
+}
+
+.theater_time .theater_time_item .soldout p .startime {
+  font-size: 80%;
+  line-height: 50px;
+  color: #000;
+}
+
+.theater_time .theater_time_item .soldout p .endtime {
+  font-size: 80%;
+  color: #000;
+}
+
+.theater_time .theater_time_item .soldout p {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+.theater_time .theater_time_item .sold_reserved {
+  width: 100%;
+  height: auto;
+  line-height: 2.5;
+  background-color: #e4e5e3;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 80%;
+  display: flex;
+}
+
+.theater_time .theater_time_item .sold_reserved p.mark {
+  width: 80%;
+}
+
+
+.fewタグ
+.theater_time .theater_time_item .few {
+  width: 100%;
+  height: auto;
+  font-size: 80%;
+	margin-right:15px;
+}
+
+.theater_time .theater_time_item .few p .startime {
+  font-size: 80%;
+  line-height: 50px;
+}
+
+.theater_time .theater_time_item .few p .endtime {
+  font-size: 80%;
+}
+
+.theater_time .theater_time_item .few p {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+
+.theater_time .theater_time_item .few_reserved {
+  width: 100%;
+  height: auto;
+  line-height: 2.5;
+  background-color: #ffafaf;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+  font-size: 80%;
+  display: flex;
+}
+
+.theater_time .theater_time_item .few_reserved p.mark {
+  width: 80%;
+}
+
+.few_reserved {
+  position: relative;
+  z-index: 1;
+}
+
+.few_reserved a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+.few_reserved:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  zoom: 1;
+}*/
+
+
+
+
+/**/
+/*
+.reserved {
+  position: relative;
+  z-index: 1;
+}
+
+.reserved a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+  z-index: 2;
+}
+
+.reserved:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  zoom: 1;
+}
+*/
+
+
+
+/*料金表*/
+
+
+th{
+  font-size: 12px;
+  border-right: 2px solid #fff;
+
+}
+
+td{
+  font-size:16px;
+  padding: 0px;
+  width: 24%;
+}
+  
+td:nth-child(-n+2){
+  padding-top: 10px;
+  }
+  
+td.remarks{
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*.scroll*/
+
+.scroll table{
+width:100%;
+}
+.scroll{
+overflow: auto;　　　　/*tableをスクロールさせる*/
+white-space: nowrap;　　/*tableのセル内にある文字の折り返しを禁止*/
+}
+.scroll::-webkit-scrollbar{　　/*tableにスクロールバーを追加*/
+ height: 5px;
+}
+.scroll::-webkit-scrollbar-track{　　/*tableにスクロールバーを追加*/
+ background: #F1F1F1;
+}
+.scroll::-webkit-scrollbar-thumb {　　/*tableにスクロールバーを追加*/
+ background: #BCBCBC;
+}
+
+
+.totop_button {
+	width: 10%;
+	padding-top: 40px;
+	padding-bottom:40px;
+}
+
+/*resp_footer*/
+
+footer .footer_nav {
+	flex-direction: column;
+	font-size: 100%;
+}
+
+footer .footer_menu {
+	display: block;
+}
+footer .company {
+	width: 100%;
+	padding-left: 0px;
+	font-size: 120%;
+}
+footer address{
+	font-size:100%;
+}
+footer .tel {
+	font-size: 100%;
+	height: auto;
+}
+footer .footer_sns {
+	width: 30%; padding-top:30px;
+}
+
+footer .footer_menu{padding-bottom:10px;}
+
+
+}

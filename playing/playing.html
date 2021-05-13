@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SDS Cinema | PLAYING</title>
+
+<link href="../assets/css/playing.css" rel="stylesheet" type="text/css">
+
+<!--favicon-->
+
+<link rel="icon" href="../favicon.ico">
+<!--jQuery--->
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/playing.js"></script>
+</head>
+
+<body>
+
+<div class="header_pink_bg">
+<header class="inner">
+
+
+  <div class="fix">
+   <p class="nav_btn"><img src="../assets/images/nav_btn.png" width="40" height="40" alt="ハンバーガーボタン"></p>
+   <h1>
+     <a href="../index.html"><img src="../assets/images/logo.png" width="383" height="67" alt="logo"></a>
+   </h1>
+  </div>
+
+  <div class="header_menu">
+    <div class="flex">
+      <ul class="header_sns">
+        <li><a href="https://ja-jp.facebook.com/GREENSPRINGS.TACHIHI/"><img src="../assets/images/header_sns01.png" width="30" height="30" alt="header_facebook"></a></li>
+        <li><a href="https://twitter.com/"><img src="../assets/images/header_sns02.png" width="30" height="30" alt="header_twitter"></a></li>
+        <li><a href="https://www.instagram.com/greensprings_view/"><img src="../assets/images/header_sns03.png" width="31" height="31" alt="header_instagram"></a></li>
+      </ul>
+      <p class="ticket_button">
+        <a href="../ticket/ticket.html"><img src="../assets/images/ticket_button.png" width="130" height="27" alt="チケット予約"></a>
+      </p>
+    </div>
+
+    <ul class="header_nav">
+      <li class="movie"><a href="../playing/playing.html">上映作品</a></li>
+      <li class="food"><a href="../food/food.html">フード&amp;ショッピング</a></li>
+      <li class="concept"><a href="../concept/concept.html">コンセプト</a></li>
+      <li class="access"><a href="../access/access.html">アクセスページ</a></li>
+    </ul>
+  </div>
+</header>
+
+<p class="main_visual"><img src="../assets/images/playing_img/nowplay_mainv.jpg" width="960" height="450" alt="ラ・ラ・ランド"></p>
+
+</div>
+
+
+<main>
+<div class="main_pink_bg">
+<section class="inner">
+
+<h4>Now Playing <span>上映作品紹介</span></h4>
+<div class="search" id="buttons">
+  <h5>Search<span></span></h5>
+    <ul class="ds_f">
+      <li><button value="all">All</button></li>
+      <li><button value="top3" id="top3">TOP 3</button></li>
+      <li><button value="new" id="new">NEW</button></li>
+      <li><button value="limit" id="limit">期間限定</button></li>
+      <li><button value="recommend" id="recommend">イチオシ</button></li>
+    </ul>
+  <h6>ジャンルで探す<span></span></h6>
+    <ul class="ds_f">
+      <li><button value="action" id="action">アクション</button></li>
+      <li><button value="thriller" id="thriller">スリラー</button></li>
+      <li><button value="drama" id="drama">ドラマ</button></li>
+      <li><button value="comedy" id="comedy">コメディ</button></li>
+      <li><button value="romance" id="romance">ロマンス</button></li>
+    </ul>
+</div>
+
+<div class="screening inner">
+  <ul class="colum" id="list">
+    <li class="rank_content1 effect-fade action drama top3">
+      <p class="rank_summary1">No.1</p>
+      <div class="movie_img">
+        <img src="../assets/images/movie_01.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>グレイテストショーマン</h3>
+      <p>ヒュー・ジャックマンが19世紀アメリカに実在したショーマンの半生を演じた大ヒットミュージカル映画が満を持してアンコール上映！<br/></p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#action">アクション</a></li>
+        <li><a href="#drama">ドラマ</a></li>
+        <li><a href="#top3">TOP 3</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content2 effect-fade new drama top3">
+      <p class="rank_summary2">No.2</p>
+      <div class="movie_img">
+        <img src="../assets/images/movie_02.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>ノマドランド</h3>
+      <p>2021年アカデミー賞有力候補といわれるロードムービー。主演は2018年「スリービルボード」でアカデミー賞主演女優賞受賞のフランシス・マクドーナン。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#drama">ドラマ</a></li>
+        <li><a href="#top3">TOP 3</a></li>
+        <li><a href="#new">NEW</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content3 effect-fade top3 romance comedy">
+      <p class="rank_summary3">No.3</p>
+      <div class="movie_img">
+        <img src="../assets/images/movie_03.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>バッファロー'66</h3>
+      <p>ヴィンセント・ギャロが監督・脚本・音楽・主演の4役をこなしたことで有名な本作。ダメ男と美少女のロマンス映画。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#romance">ロマンス</a></li>
+        <li><a href="#comedy">コメディ</a></li>
+        <li><a href="#top3">TOP 3</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content1 effect-fade limit drama">
+      <p class="rank_summary">美しい映画の代名詞</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/thefall.jpg" width="200" height="300" alt="落下の王国">
+      </div>
+      <h3>落下の王国</h3>
+      <p>DVD/Blu-rayの廃盤で鑑賞自体が困難な本作を期間限定で上映！世界遺産で撮影された傑作ファンタジー映画。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#drama">ドラマ</a></li>
+        <li><a href="#limit">期間限定</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content2 effect-fade thriller drama recommend">
+      <p class="rank_summary">遺伝子の優劣で人は測れない</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/gattaca.jpg" width="200" height="300" alt="ガタカ">
+      </div>
+      <h3>ガタカ</h3>
+      <p>イーサンホーク×ジュードロウ×ユマサーマンが贈る美しくも残酷なSFヒューマンドラマの傑作。自信を失ったとき、一歩踏み出したいときに見てほしい。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#thriller">スリラー</a></li>
+        <li><a href="#drama">ドラマ</a></li>
+        <li><a href="#recommend">イチオシ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content3 effect-fade thriller drama">
+      <p class="rank_summary">ポン・ジュノ監督の代表作
+      <!--ポン・ジュノ監督を語るには欠かせない--></p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/satsuzin.jpg" width="200" height="300" alt="殺人の追憶">
+      </div>
+      <h3>殺人の追憶</h3>
+      <p>「パラサイト　半地下の家族」のポン・ジュノ監督×ソン・ガンホ主演で贈る実際の未解決連続殺人事件を元にしたクライム映画。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#thriller">スリラー</a></li>
+        <li><a href="#drama">ドラマ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content1 effect-fade action comedy">
+      <p class="rank_summary">2007年英国で3週連続No.1</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/hotfuzz.jpg" width="200" height="300" alt="ホットファズ">
+      </div>
+      <h3>ホットファズ</h3>
+      <p>エドガー・ライト監督×サイモン・ペッグ×ニック・フロストの「ショーンオブザデッド」タッグが送るポリスアクションコメディー！</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#action">アクション</a></li>
+        <li><a href="#comedy">コメディ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content2 effect-fade drama recommend">
+      <p class="rank_summary">ヒトラーの忘れ物</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/german.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>ヒトラーの忘れ物</h3>
+      <p>デンマーク×ドイツ共同製作作品。第二次世界大戦後ナチが埋めた200万個の地雷を撤去したドイツ人少年兵たちを描いた映画。</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#drama">ドラマ</a></li>
+        <li><a href="#recommend">イチオシ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content3 effect-fade thriller action">
+      <p class="rank_summary">映画史に名を刻んだ過激作品</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/fight.jpg" width="200" height="300" alt="greatestshowman">
+      </div>
+      <h3>ファイトクラブ</h3>
+      <p>鬼才デヴィッド・フィンチャー監督とブラッド・ピット×エドワード・ノートンのダブル主演で贈るサイコスリラー。
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#action">アクション</a></li>
+        <li><a href="#thriller">スリラー</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content1 effect-fade recommend thriller">
+      <p class="rank_summary">驚愕の「逆再生映画」</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/memento.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>メメント</h3>
+      <p>「インセプション」「ダークナイト」のクリストファー・ノーラン監督の初期監督作品。コアな映画ファンから高評価を得ている本作をぜひ劇場で。
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#thriller">スリラー</a></li>
+        <li><a href="#recommend">イチオシ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content2 effect-fade horror comedy">
+      <p class="rank_summary">ホラー苦手でもオススメ！</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/happydeathday_.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>ハッピーデスデイ</h3>
+      <p>誕生日に殺されることをループする女子大生がループを利用して謎の犯人と戦う新感覚ホラー！ホラーなのに思わず笑ってしまうかも！
+</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#horror">ホラー</a></li>
+        <li><a href="#comedy">コメディ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+    
+    <li class="rank_content3 effect-fade romance comedy">
+      <p class="rank_summary">自己肯定感がほしいあなたへ</p>
+      <div class="movie_img">
+        <img src="../assets/images/playing_img/ifeelpretty.jpg" width="200" height="300" alt="greatistshowman">
+      </div>
+      <h3>アイフィールプリティ!</h3>
+      <p>容姿に自信のない女の子があるハプニングから自分を美少女と思うようになるロマンスコメディ。疲れた日でも鑑賞後は足取りが軽くなること間違いなし！</p>
+      <div class="about_btn">
+        <p><a href="#">作品詳細</a></p>
+        <img src="../assets/images/pnk_arrow.png" width="108" height="8" alt="作品詳細">
+      </div>
+      <ul class="tag">
+        <li><a href="#romance">ロマンス</a></li>
+        <li><a href="#comedy">コメディ</a></li>
+      </ul>
+      <div class="ticket_btn"><a href="../ticket/ticket.html">チケットはこちら</a></div>
+    </li>
+  </ul>
+</div>
+
+</section>
+</div>
+
+</main>
+
+<p class="totop_button inner">
+  <a href="#">
+    <img src="../assets/images/totop_button.png" width="41" height="39" alt="totop">
+  </a>
+</p>
+
+
+
+
+<!--共通のとこ-->
+<footer>
+
+<ul class="footer_nav inner">
+  <li><a href="../index.html">ホーム</a></li>
+  <li><a href="playing.html">上映作品</a></li>
+  <li><a href="../food/food.html">フード&amp;ショッピング</a></li>
+  <li><a href="../concept/concept.html">コンセプト</a></li>
+  <li><a href="../access/access.html">アクセス</a></li>
+  <li><a href="../ticket/ticket.html">チケット予約</a></li>
+</ul>
+
+
+<div class="footer_menu inner">
+
+<div class="flex">
+<p class="footer_logo"><a href="../index.html"><img src="../assets/images/footer_logo.png" width="210" height="145" alt="footer_logo"></a></p>
+
+
+<div class="contact">
+<p class="company">株式会社SDS</p>
+<address><p>
+〒190-0014 東京都立川市緑町3番1
+</p></address>
+<p class="tel">TEL 042-524-2222</p></div>
+</div>
+<ul class="footer_sns inner">
+  <li><a href="https://ja-jp.facebook.com/GREENSPRINGS.TACHIHI/"><img src="../assets/images/footer_sns01.png" width="61" height="59" alt="footer_facebook"></a></li>
+  <li><a href="https://twitter.com/"><img src="../assets/images/footer_sns02.png" width="60" height="59" alt="footer_twitter"></a></li>
+  <li><a href="https://www.instagram.com/greensprings_view/"><img src="../assets/images/footer_sns03.png" width="60" height="60" alt="footer_instagram"></a></li>
+</ul>
+</div>
+<p class="pink_bg"><small class="inner">Copyright SDS Co., Ltd. All Rights Reserved.</small></p>
+
+</footer>
+</body>
+</html>

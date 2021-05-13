@@ -1,0 +1,375 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, p, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, address {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.access_title {
+    padding-top: 45px;
+    margin-bottom: 0px;
+}
+
+
+.access_title h4.title {
+	  background-image: url(../images/icon_heading.png);
+    padding-left: 50px;
+    height: 57px;
+    line-height: 57px;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+
+.access_item h5 {
+	font-size: 26px;
+	font-weight: bold;
+	border-left: 8px solid #ffafaf;
+    line-height: 26px;
+    padding-left: 20px;
+	margin-bottom:30px;
+}
+
+.access_item address{
+	font-size: 20px;
+	line-height:1.5;
+font-style:normal;
+margin-bottom:30px;
+}
+
+.map-container{
+text-align: center;
+}
+
+.access_traffic{
+	margin-left:35px;
+	margin-right:35px;
+	padding: 60px;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.access_traffic h5 {
+	font-size: 26px;
+	font-weight: bold;
+	border-left: 8px solid #ffafaf;
+    line-height: 26px;
+    padding-left: 20px;
+	margin-bottom:30px;
+}
+.access_traffic p {
+	font-size: 16px;
+	line-height:1.5;
+    margin-bottom: 30px;
+}
+
+.access_traffic .traffic_caution{
+	font-size:12px;
+	
+}
+
+.access_traffic dl{
+	font-size: 20px;
+	border-top:1px solid #000;
+	padding-top:30px;
+
+	}
+
+.access_traffic dl dt {
+	clear: left;
+	float: left;
+	width: 300px;
+}
+
+.access_traffic dl dd{
+	padding-left:300px;
+	}
+
+.business_hours h4 {
+	background-image: url(../images/icon_heading.png);
+	padding-left: 50px;
+	height: 57px;
+	line-height: 57px;
+	background-repeat: no-repeat;
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom:40px;
+}
+
+
+/*営業時間*/
+
+.business_hours table h4 {
+	background-image: url(../images/icon_heading.png);
+	padding-left: 50px;
+	height: 57px;
+	line-height: 57px;
+	background-repeat: no-repeat;
+	font-size: 40px;
+	font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.business_hours table{
+  border-collapse: collapse;
+  width:840px;
+}
+
+
+.business_hours th{
+  background-color: #ffafaf;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  border-right: 20px solid #fff;
+  padding: 5px;
+  line-height:1.5;
+  height:20px;
+}
+
+
+.business_hours td{
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+
+
+.business_hours td.b_time{
+  padding-left:10px;
+}
+
+
+.business_hours td.remarks{
+  font-size: 14px;
+}
+
+.business_hours .caution{
+	font-size:12px;
+	padding-top:30px;
+}
+
+
+
+/*-jQuer用-*/
+/*-《下から》スクロールするとふわと表示するやつ---*/
+.section{
+	opacity:0;
+  transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+  transition: all 1500ms; /* フェードインにかかる時間を指定 */
+}
+
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+
+
+@media screen and (max-width:640px) {
+
+.inner {
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+.main_pink_bg {
+	padding-bottom: 80px;
+}
+.fix {
+	position: fixed;
+	background-color: #ffebea;
+}
+.nav_btn {
+	display: block;
+	width: 15%;
+	height: auto;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-color: #ffebea;z-index: 30;
+}
+
+
+
+
+header {
+	display: block;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+header h1 {
+	position: fixed;
+	left: 55px;
+	top: 0px;
+	width: 85%;
+	height: auto;
+	background-color: #ffebea;
+	z-index: 30;
+}
+
+.header_nav {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	margin-right: auto;
+	background-color: #ffebea;
+	z-index: 30;
+}
+.header_nav li {
+	height: auto;
+	width: 100%;
+	margin-left: 0px;
+	font-size: 120%;
+}
+header .flex {
+	padding-top: 60px;
+}
+header .ticket_button {
+	width: 30%;
+	padding-left: 0px;
+}
+nav {
+	display: none;
+}
+
+
+.map-container iframe{
+	max-width:100%;
+	}
+
+.access_title h4.title,.business_hours h4{
+    font-size:150%;
+  }
+  
+
+.access_traffic{
+	margin-left:0px;
+	margin-right:0px;
+	padding: 6%;
+    margin-bottom: 30px;
+}
+
+.access_traffic h5 {
+	font-size: 120%;
+	font-weight: bold;
+    line-height: 120%;
+    padding-left: 20px;
+	margin-bottom:10px;
+}
+.access_traffic p {
+	font-size: 100%;
+	line-height:1.5;
+    margin-bottom: 30px;
+}
+
+.access_traffic .traffic_caution{
+	font-size:12px;
+}
+
+.access_traffic dl dt {
+	float: none;
+	width: auto;
+	font-size:80%;
+}
+
+.access_traffic dl dd{
+	padding-left:initial;
+	font-size:80%;
+	margin-bottom:20px;
+	}
+
+
+/*営業時間*/
+
+
+
+.business_hours th{
+  font-size: 100%;
+  border-right: 2px solid #fff;
+  line-height:100%;
+  height:150%;
+}
+
+.business_hours td{
+  font-size:100%;
+  padding: 0px;
+  width: 24%;
+}
+  
+.business_hours td:nth-child(-n+2){
+  font-size:100%;
+  padding:10px 0 10px;
+  }
+
+
+/*.scroll*/
+
+.scroll table{
+width:100%;
+}
+.scroll{
+overflow: auto;　　　　/*tableをスクロールさせる*/
+white-space: nowrap;　　/*tableのセル内にある文字の折り返しを禁止*/
+}
+.scroll::-webkit-scrollbar{　　/*tableにスクロールバーを追加*/
+ height: 5px;
+}
+.scroll::-webkit-scrollbar-track{　　/*tableにスクロールバーを追加*/
+ background: #F1F1F1;
+}
+.scroll::-webkit-scrollbar-thumb {　　/*tableにスクロールバーを追加*/
+ background: #BCBCBC;
+}
+
+
+.totop_button {
+	width: 10%;
+	padding-top: 40px;
+	padding-bottom:40px;
+}
+
+/*resp_footer*/
+
+footer .footer_nav {
+	flex-direction: column;
+	font-size: 100%;
+}
+
+footer .footer_menu {
+	display: block;
+}
+footer .company {
+	width: 100%;
+	padding-left: 0px;
+	font-size: 120%;
+}
+footer address{
+	font-size:100%;
+}
+footer .tel {
+	font-size: 100%;
+	height: auto;
+}
+footer .footer_sns {
+	width: 30%; padding-top:30px;
+}
+
+footer .footer_menu{padding-bottom:10px;}
+
+
+}
